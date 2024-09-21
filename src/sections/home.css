@@ -1,0 +1,49 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#home{
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title{
+    display: flex;
+    text-align: center;
+    color: var(--text-color);
+    font-size: max(5vw,3vh);
+    margin-bottom: 5vh;
+}
+
+.description{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: max(2vw,1.7vh);
+    margin-bottom: 5vh;
+}
+
+.cta-button{
+    text-decoration: none;
+    color: var(--accent-color);
+    background-color: #1e546214;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.cta-button:hover{
+    transform: translateY(-2px);
+    background-color: var(--background-color);
+    cursor: pointer;
+}

@@ -8,9 +8,9 @@ function NavBar() {
   return (
     <div id="navigation">
       <nav id="desktopNav">
-        <h1>Smudge's Hub</h1>
+      <h1 className="logo"><a href="#">Smudge's Hub</a></h1>
         <ul id="desktopMenu">
-          <li><a>About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a>Research</a></li>
           <li><a>Projects</a></li>
           <li><a>Publications</a></li>
@@ -22,17 +22,17 @@ function NavBar() {
       
       <div id="mobileNav">
         <div id="menu">
-        <h1>Smudge's Hub</h1>
+        <h1 className="logo"><a href="#">Smudge's Hub</a></h1>
           
         </div>
       </div>
       <ul class="mobileMenu">
-        <li><a>About</a></li>
-        <li><a>Research</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Publications</a></li>
-        <li><a>Seminar and Talks</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#about" onClick={toggleMenu}>About</a></li>
+        <li><a onClick={toggleMenu}>Research</a></li>
+        <li><a onClick={toggleMenu}>Projects</a></li>
+        <li><a onClick={toggleMenu}>Publications</a></li>
+        <li><a onClick={toggleMenu}>Seminar and Talks</a></li>
+        <li><a onClick={toggleMenu}>Contact</a></li>
       </ul>
       <div class="menu-button" onClick={toggleMenu}>
           <div class="ham-bar bar-top"></div>
