@@ -1,0 +1,42 @@
+
+
+#theme {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px;    /* Adjust this value for vertical positioning */
+    right: 20px;     /* Adjust this value for horizontal positioning */
+    z-index: 1000;   /* Ensures it stays above other content */
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color); /* Added 'solid' and adjusted syntax */
+}
+
+
+
+
+.moon:hover, .sun:hover {
+    transform: scale(1.1); /* Optional: scales the icons slightly on hover */
+}
+
+
+svg{
+    stroke: var(--text-color);
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: -42px;    /* Adjust this value for vertical positioning */
+    right: 0px;     /* Adjust this value for horizontal positioning */
+}
+
+.icon {
+    transition: all 0.5s ease; /* Animation duration */
+  }
+  
+  .fade-in {
+    opacity: 1; /* Fully visible */
+    transform: scale(1);
+  }
+  
+  .fade-out {
+    opacity: 0; /* Fully invisible */
+    transform: scale(0.7);
+  }

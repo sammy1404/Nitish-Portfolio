@@ -1,38 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+:root {
+    --primary-color: #0a1a2b;      /* Deep navy blue for primary backgrounds */
+    --secondary-color: #1c3b5a;    /* A lighter navy for contrast in sections */
+    --accent-color: #4db8ff;       /* Bright, vibrant blue for accents and interactive elements */
+    --background-color: #0a0f1d;   /* Dark navy background for the entire page */
+    --text-color: #e0e8ff;      
+}
+
+
+/* Light theme */
+.light-theme {
+    --primary-color: #f1f1f1;
+    --secondary-color: #ff9f43;
+    --accent-color: #54a0ff;
+    --background-color: #ffffff;
+    --text-color: #2c3e50;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh; /* Make sure the background covers the full height of the viewport */
+    padding: 20px;
 }

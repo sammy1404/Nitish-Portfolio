@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+@media(min-width:981px){
+    #desktopNav{
+        display: flex;
+        background-color: var(--secondary-color);
+        width: 100vw;
+        height: 70px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    
+    h1{
+        padding-left: 20px;
+    }
+    
+    
+    
+    
+    #desktopMenu{
+        position: fixed;
+        display: flex;
+        list-style: none;
+        font-size: 15px;
+        right: 20px;
+    }
+    
+    li{
+        padding: 10px;
+        font-weight: 550;
+        font-size: 15px;
+    }
+    
+    li:hover{
+        cursor: pointer;
+    }
+    
+    li a {
+        position: relative;
+        display: inline-block;
+        color: var(--text-color);
+    }
+    
+    li a:before {
+        content: '';
+        position: absolute;
+        height: 2.5px;
+        width: 0;
+        background: var(--text-color);
+        bottom: -2px;
+        left: 50%; /* Start from the center */
+        transform: translateX(-50%); /* Move the element back by half its own width */
+        transition: all 0.4s ease; /* Smooth animation */
+    }
+    
+    li a:hover:before {
+        width: 100%; /* Grow to the full width */
+    }
+
+    #mobileMenu{
+        position: fixed;
+        list-style: none;
+        left: 100vw;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .menu-button{
+        display: none;
+    }
+    .mobileMenu{
+        display: none;
+    }
+
+}
+
+
+@media(max-width: 980px){
+    #desktopNav{
+        display: none;
+    }
+
+    #mobileNav{
+        position: fixed;
+        background-color: var(--secondary-color);
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        align-items: center;
+        height: 60px;
+    }
+
+    h1{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .menu-button{
+        position: fixed;
+        top: 0;
+        right: 0;
+        right: 5px;
+        padding: 1rem;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 10; 
+    }
+    .ham-bar{
+        position: absolute;
+        height: 3px;
+        border-radius: 2px;
+        transform: translate(-50%,-50%);
+        background-color: var(--text-color);
+        transition: transform .6s, opacity .8s, top .6s;
+    }
+    .bar-top{
+        width: 60%;
+        top: 40%;
+        left: 50%;
+    }
+    
+    .bar-bottom{
+        width: 40%;
+        top: 60%;
+        left: 60%;
+    }
+    
+    .menu-button.active .bar-top{
+        transform: translate(-50%,-50%) rotate(-315deg);
+        top: 50%;
+        width: 50%;
+    }
+    
+    
+    .menu-button.active .bar-bottom{
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-225deg);
+        top: 50%;
+    }
+
+    .mobileMenu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+        list-style: none;
+        z-index: 1;
+        transform: translateX(100%); /* Initially off-screen */
+        transition: transform 0.3s ease;
+    }
+
+    .mobileMenu.active {
+        transform: translateX(0); /* Brings the menu into view */
+    }
+
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobileMenu li a{
+        font-size: 20px;
+    }
+
+
+
+}
+
+
