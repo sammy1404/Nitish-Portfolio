@@ -1,5 +1,10 @@
 #about{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .abt{
@@ -54,4 +59,26 @@
     box-shadow: 5px 5px 20px var(--accent-color); /* Adds shadow to bottom and right */
     cursor: pointer;
 
+}
+
+@media(max-width:900px){
+    .aboutFlex{
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    .dp{
+        width: 325px;
+        height: auto;
+    }
+    .abt{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:550px){
+    .skill{
+        height: 20px;
+    }
 }

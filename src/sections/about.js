@@ -1,9 +1,10 @@
 import React from 'react';
 import './about.css'; // Add your styles here
+import BadgeGallery from '../components/skills';
 const About = () => {
   return (
     <section id='about'>
-      <div className="aboutContent">
+        <div className="aboutContent">
         <h1 class='title aboutTitle'>About Me</h1>
         <div class='aboutFlex'>
         <p class='abt'>
@@ -13,13 +14,23 @@ const About = () => {
             PyTorch, Tensorflow, Flask and Django. My current research interests lie within the domain of Graph Theory and 
             Graph Neural Networks especially Dynamic Graphs. I love reading new research, connecting with different people 
             and exchanging new ideas. If I am not working on some deep learning model, I am either listening to K-Pop or 
-            watching a K-Drama :))
+            watching a K-Drama : ))
         </p>
         <img src='profilePic.jpg' class='dp'></img>
-      </div>
+
+        
+        </div>
+
+        <div>
+            <BadgeGallery />
+        </div>
+        
+            
+
+
 
             
-      </div>
+        </div>
     </section>
   );
 };
