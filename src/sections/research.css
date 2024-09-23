@@ -41,6 +41,12 @@
     background-color: var(--secondary-color);
     padding: 15px;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 /* Media query to change layout at 900px */
