@@ -61,6 +61,19 @@
 
 }
 
+.skill{
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    filter: blur(0.3px);
+    filter: brightness(0.8);
+}
+
+.skill:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    filter: brightness(1);
+}
+
 @media(max-width:900px){
     .aboutFlex{
         display: flex;
@@ -81,4 +94,20 @@
     .skill{
         height: 20px;
     }
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.center h2{
+    text-align: center;
+}
+
+.sendBack{
+    z-index: 0;
 }

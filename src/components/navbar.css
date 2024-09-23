@@ -21,6 +21,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 10;
     }
     
     
@@ -106,6 +107,7 @@
         width: 100vw;
         align-items: center;
         height: 60px;
+        z-index: 10;
     }
 
     h1{

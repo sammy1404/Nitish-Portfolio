@@ -1,0 +1,105 @@
+#researchFlex {
+    display: flex;
+    flex-wrap: wrap; /* Ensure flexbox wraps when needed */
+    justify-content: center; /* Center rows */
+    height: fit-content;
+    margin-inline: 40px;   
+    padding-top: 70px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    transform: translateY(-90px);
+    padding-inline: 10px;
+}
+#research{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between the cards */
+    width: 100%; /* Full width row */
+    margin-bottom: 20px; /* Space between rows */
+    height: fit-content;
+}
+
+.card {
+    position: relative;
+    flex: 1 1 40%; /* Take up 45% of the row width */
+    margin: 10px; /* Add space around the cards */  
+    color: white;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    overflow: hidden;
+}
+
+/* Media query to change layout at 900px */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 100%; /* Make each card take full width */
+        margin: 10px 0; /* Adjust margin for wrapping */
+    }
+    .bullets{
+        font-size: 13px;
+    }
+}
+
+.researchTitle{
+    align-self: center;
+    background-color: var(--background-color);
+    z-index: 2;
+    padding-inline: 40px;
+}
+.coverImage{
+    position: relative; /* Make the image absolutely positioned */
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 10px; /* Maintain rounded corners */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Mask from top transparent to bottom white */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* For Safari */
+    transition: transform 0.3s ease, mask-image 0.3s ease; 
+}
+
+.coverImage:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.statement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-30px);
+}
+
+.universityName{
+    font-size: 30px;
+    text-align: center;
+}
+
+.statementHeading{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.problemStatement{
+    font-size: 15px;
+    margin-top: 6px;    
+    align-self: flex-start;
+}
+
+.bullets{
+    margin-left: 20px;
+    transform: translateY(-15px);
+}

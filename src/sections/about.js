@@ -21,8 +21,9 @@ const About = () => {
         
         </div>
 
-        <div>
-            <BadgeGallery />
+        <div className='center'>
+            <h2>Here are some of the tools and frameworks I'm most familiar with!</h2>
+            <BadgeGallery/>
         </div>
         
             
