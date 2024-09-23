@@ -11,7 +11,7 @@ function NavBar() {
       <h1 className="logo"><a href="#">Smudge's Hub</a></h1>
         <ul id="desktopMenu">
           <li><a href="#about">About</a></li>
-          <li><a>Research</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a>Projects</a></li>
           <li><a>Publications</a></li>
           <li><a>Seminar and Talks</a></li>
