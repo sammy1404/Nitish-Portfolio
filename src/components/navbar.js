@@ -12,10 +12,10 @@ function NavBar() {
         <ul id="desktopMenu">
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Publications</a></li>
-          <li><a>Seminar and Talks</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#seminars">Seminar and Talks</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -28,11 +28,11 @@ function NavBar() {
       </div>
       <ul class="mobileMenu">
         <li><a href="#about" onClick={toggleMenu}>About</a></li>
-        <li><a onClick={toggleMenu}>Research</a></li>
-        <li><a onClick={toggleMenu}>Projects</a></li>
-        <li><a onClick={toggleMenu}>Publications</a></li>
-        <li><a onClick={toggleMenu}>Seminar and Talks</a></li>
-        <li><a onClick={toggleMenu}>Contact</a></li>
+        <li><a href="#research" onClick={toggleMenu}>Research</a></li>
+        <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+        <li><a href="#publications" onClick={toggleMenu}>Publications</a></li>
+        <li><a href="#seminars" onClick={toggleMenu}>Seminar and Talks</a></li>
+        <li><a href="#contact"onClick={toggleMenu}>Contact</a></li>
       </ul>
       <div class="menu-button" onClick={toggleMenu}>
           <div class="ham-bar bar-top"></div>
