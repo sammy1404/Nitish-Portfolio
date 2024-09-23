@@ -16,7 +16,7 @@
 .aboutTitle{
     display: flex;
     align-items: center;
-    color: var(--secondary-color);
+    color: var(--text-color);
     margin-bottom: 0;
 }
 

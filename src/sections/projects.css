@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    width: 100%;
+}
+
+.flex-item {
+    flex: 1 1 25%; /* Grow and shrink, base width of 30% */
+    min-width: 150px; /* Minimum width for each item */
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .flex-item {
+        flex: 1 1 100%; /* Each item will take full width in smaller screens */
+    }
+}
+
+
+
+.projectHeader{
+    text-align: left;
+    font-size: 15px;
+}
+
+.projectBullets{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+}
