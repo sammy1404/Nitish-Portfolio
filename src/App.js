@@ -4,6 +4,7 @@ import ThemeButton from './components/themeButton.js';
 import Home from './sections/home.js'
 import About from './sections/about.js';
 import Research from './sections/research.jsx';
+import Projects from './sections/projects.js';
 import "./App.css"; // We'll add some CSS here
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Research />
+      <Projects />
     </div>
   );
 }

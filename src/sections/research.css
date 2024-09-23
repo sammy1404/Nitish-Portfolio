@@ -7,8 +7,24 @@
     padding-top: 70px;
     border: 2px solid var(--accent-color);
     border-radius: 15px;
-    transform: translateY(-90px);
+    transform: translateY(-80px);
     padding-inline: 10px;
+}
+
+@media(max-width:900px){
+    #researchFlex{
+        transform: translateY(-50px);
+    }
+    .researchTitle{
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:450px){
+    .researchTitle{
+        transform: translateX(-10px);
+    }
 }
 #research{
     display: flex;
@@ -64,7 +80,7 @@
     align-self: center;
     background-color: var(--background-color);
     z-index: 2;
-    padding-inline: 40px;
+    padding-inline: 10px;
 }
 .coverImage{
     position: relative; /* Make the image absolutely positioned */
