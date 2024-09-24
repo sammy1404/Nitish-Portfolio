@@ -1,0 +1,101 @@
+#publications{
+    height: fit-content;
+    padding-top: 90px;
+    width: 100%;
+}
+
+.publicationsHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-publications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between the cards */
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card-publications {
+    flex: 1 1 25%; /* Flex grow, shrink, and basis for flexible sizing */
+    min-width: 280px; /* Prevent cards from shrinking too small */
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease; /* For hover effect */
+  }
+  
+  .card-publications img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-publications h3 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .card-publications p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .card-publications h6 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-publications .DOI {
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+
+  .quickLinks{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+  }
+  
+  .card-publications .quickLinks a svg {
+    margin-top: 15px;
+    stroke: var(--text-color);
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+
+  .gitLogo{
+    fill: var(--text-color);
+    stroke-width: 0.2px;
+  }
+
+  .gitLogo:hover{
+    fill: var(--accent-color);
+  }
+  
+  .card-publications .quickLinks a svg:hover {
+    transform: translateY(-5px) scale(1.2);
+    stroke: var(--accent-color)
+  }
+  
+  /* Add hover effect for cards */
+  .card-publications:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    ;
+  }
+  
+  /* Media query to wrap and adjust card width on smaller screens */
+  @media (max-width: 900px) {
+    .card-publications {
+      flex: 1 1 100%; /* Cards take full width on smaller screens */
+    }
+  }
+  
+  

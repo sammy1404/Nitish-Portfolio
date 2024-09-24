@@ -5,6 +5,7 @@ import Home from './sections/home.js'
 import About from './sections/about.js';
 import Research from './sections/research.jsx';
 import Projects from './sections/projects.js';
+import Publications from './sections/publications.js';
 import "./App.css"; // We'll add some CSS here
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Research />
       <Projects />
+      <Publications />
     </div>
   );
 }
