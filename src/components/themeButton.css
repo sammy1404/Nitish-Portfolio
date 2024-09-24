@@ -20,7 +20,7 @@
 }
 
 
-svg{
+#theme svg{
     stroke: var(--text-color);
     position: fixed; /* Fixes the position relative to the viewport */
     bottom: -42px;    /* Adjust this value for vertical positioning */
