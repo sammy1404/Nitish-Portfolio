@@ -8,6 +8,8 @@
 
 #seminars{
     padding-top: 80px;
+    margin: 0;
+    padding: o;
 }
 
 .seminarContainer {
@@ -19,6 +21,17 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
+  }
+
+  @media(max-width:400px){
+
+    .seminarContainer{
+        width: fit-content;
+        height: fit-content;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
   }
   
   .seminarCard {
