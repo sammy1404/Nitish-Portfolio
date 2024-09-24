@@ -1,0 +1,89 @@
+.title{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#seminars{
+    padding-top: 80px;
+}
+
+.seminarContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space out cards evenly */
+    gap: 20px; /* Add some space between the cards */
+    width: 95%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+  
+  .seminarCard {
+    flex: 1 1 calc(40% - 20px); /* Two cards per row, accounting for the gap */
+    min-width: 300px; /* Minimum card width */
+    background-color: var(--primary-color); /* Background color for the cards */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.4s ease-in-out;
+  }
+
+  .seminarCard:hover{
+    transform: scale(1.02) translateY(-3px);
+  }
+  
+  @media (max-width: 900px) {
+    .seminarCard {
+      flex: 1 1 100%; /* Make cards stack on top of each other */
+    }
+  }
+  
+
+
+  .seminarHeading{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .seminarDetails{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .seminarLinks{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .seminarLinks svg{
+    stroke: none;
+    fill: var(--text-color);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .seminarLinks svg:hover{
+    transform: scale(1.15) translateY(-5px);
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+
+  .seminarLinks .eventDetails{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .seminarLinks .eventDetails:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+  }

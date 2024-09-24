@@ -43,7 +43,7 @@ section{
 
 
 .cta-button:hover{
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.5);
     background-color: var(--background-color);
     cursor: pointer;
 }

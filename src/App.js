@@ -6,6 +6,8 @@ import About from './sections/about.js';
 import Research from './sections/research.jsx';
 import Projects from './sections/projects.js';
 import Publications from './sections/publications.js';
+import Seminars from './sections/seminars.js';
+import Contact from './sections/contact.js';
 import "./App.css"; // We'll add some CSS here
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Research />
       <Projects />
       <Publications />
+      <Seminars />
+      <Contact />
     </div>
   );
 }

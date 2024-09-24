@@ -7,13 +7,13 @@
     padding-top: 70px;
     border: 2px solid var(--accent-color);
     border-radius: 15px;
-    transform: translateY(-80px);
+    transform: translateY(-40px);
     padding-inline: 20px;
 }
 
 @media(max-width:900px){
     #researchFlex{
-        transform: translateY(-50px);
+        transform: translateY(-15px);
     }
     .researchTitle{
         padding: 0;

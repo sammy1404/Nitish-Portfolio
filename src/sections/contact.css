@@ -1,0 +1,105 @@
+#contact{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact svg{
+    stroke: var(--text-color);
+    fill: none;
+}
+
+#contact svg:hover{
+    cursor: pointer;
+}
+
+.contactDetails{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: fit-content;
+    padding-top: 30px;
+}
+
+.scholar{
+    stroke: var(--text-color);
+    stroke-width: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.scholarSVG{
+    width: 50px;
+    height: 50px;
+    
+}
+
+#contact svg:hover .scholar{
+    stroke: var(--accent-color);
+    transform: scale(1.05) translateY(-3px);
+    cursor: pointer;
+}
+
+.linkedin{
+    stroke: none;
+    fill: var(--text-color);
+}
+
+
+.git{
+    fill: var(--text-color);
+    stroke: none;
+}
+
+.mail{
+    stroke: var(--text-color);
+    stroke-width: 2; 
+    stroke-linecap: round; 
+    stroke-linejoin:round;
+}
+
+#mailSVG:hover .mail{
+    stroke: var(--accent-color);
+}
+
+
+
+.spotify{
+    fill: var(--text-color);
+    stroke: none;
+}
+
+.SVG{
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.SVG:hover{
+    transform: scale(1.05) translateY(-3px);
+}
+
+.SVG:hover .spotify,
+.SVG:hover .git,
+.SVG:hover .linkedin {
+  fill: var(--accent-color);
+}
+
+.spotify, .git, .linkedin{
+    transition: all 0.3s ease-in-out;
+}
+
+
+.shiftLeft{
+    display: flex;
+    gap: 15px;
+    transform: translateY(5px);
+}
+
+@media(max-width: 450px){
+    .contactDetails{
+        transform: scale(0.7);
+    }
+}
