@@ -32,9 +32,18 @@
     --text-color: #a97a62;
 }
 
-.App {
+.App{
     background-color: var(--background-color);
     color: var(--text-color);
     min-height: 100vh; /* Make sure the background covers the full height of the viewport */
     padding: 20px;
+}
+
+
+.blog-page{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh; /* Make sure the background covers the full height of the viewport */
+    padding: 20px
+
 }

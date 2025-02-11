@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Understanding Modern Web Development",
+      "date": "2023-11-15",
+      "author": "Smudge",
+      "summary": "A deep dive into contemporary web development practices and tools.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "image": "/images/web-development.jpg",
+      "tags": ["web development", "programming", "technology"]
+    },
+    {
+      "id": 2,
+      "title": "The Future of Artificial Intelligence",
+      "date": "2023-11-10",
+      "author": "Smudge",
+      "summary": "Exploring the potential impacts and developments in AI technology.",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "image": "/images/ai-future.jpg",
+      "tags": ["AI", "technology", "future"]
+    },
+    {
+      "id": 3,
+      "title": "Optimizing React Performance",
+      "date": "2023-11-05",
+      "author": "Smudge",
+      "summary": "Tips and tricks for improving your React application's performance.",
+      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+      "image": "/images/react-performance.jpg",
+      "tags": ["React", "performance", "javascript"]
+    },
+    {
+      "id": 4,
+      "title": "CSS Best Practices in 2023",
+      "date": "2023-10-30",
+      "author": "Smudge",
+      "summary": "Modern approaches to writing maintainable and scalable CSS.",
+      "content": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "/images/css-practices.jpg",
+      "tags": ["CSS", "web design", "frontend"]
+    },
+    {
+      "id": 5,
+      "title": "Getting Started with TypeScript",
+      "date": "2023-10-25",
+      "author": "Smudge",
+      "summary": "A beginner's guide to implementing TypeScript in your projects.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "/images/typescript-intro.jpg",
+      "tags": ["TypeScript", "javascript", "programming"]
+    }
+  ]
+}

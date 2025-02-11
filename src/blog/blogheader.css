@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    height: fit-content;
+    padding: 0;
+}
+
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchBar {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 200px;
+    outline: none;
+    &::placeholder {
+        color: var(--text-color);
+    };
+
+    transition: all 0.3s ease-in-out;
+}
+
+.searchBar:hover{
+    background-color: var(--accent-color);
+    width: 350px;
+}
+
+.line{
+    margin-top: 10px;
+    justify-self: center;
+}
