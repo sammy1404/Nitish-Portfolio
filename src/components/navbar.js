@@ -1,5 +1,4 @@
 // src/Navbar.js
-import React, { useState } from "react";
 import { toggleMenu } from './menutoggle'; // Import the toggle function
 import "./navbar.css"; // We'll add some CSS here
 
