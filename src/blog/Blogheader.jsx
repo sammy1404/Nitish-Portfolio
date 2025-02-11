@@ -6,7 +6,7 @@ const Blogheader = () => {
   return (
     <>
     <div className='header'>
-        <h1>Smudge's tech blog</h1>
+        <h1 className='blogheader'>Smudge's tech blog</h1>
         <div className='search'>
           <input type="text" placeholder="Search..." className='searchBar'/>
         </div>    
