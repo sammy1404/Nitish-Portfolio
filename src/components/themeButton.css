@@ -5,11 +5,12 @@
     bottom: 20px;    /* Adjust this value for vertical positioning */
     right: 20px;     /* Adjust this value for horizontal positioning */
     z-index: 1000;   /* Ensures it stays above other content */
-    padding: 5px;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
+    height: 42px;
+    width: 42px;
+    border-radius: 20px;
     border: 2px solid var(--accent-color); /* Added 'solid' and adjusted syntax */
+    transform: translateY(-5px);
+    background-color: var(--background-color);
 }
 
 #theme:hover{
@@ -27,8 +28,8 @@
 #theme svg{
     stroke: var(--text-color);
     position: fixed; /* Fixes the position relative to the viewport */
-    bottom: -42px;    /* Adjust this value for vertical positioning */
-    right: 0px;     /* Adjust this value for horizontal positioning */
+    bottom: -32px;    /* Adjust this value for vertical positioning */
+    right: 8.5px;     /* Adjust this value for horizontal positioning */
 }
 
 .icon {

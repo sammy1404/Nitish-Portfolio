@@ -6,7 +6,7 @@
 .blogButton{
   position: fixed;
   bottom: 22.5px;
-  right: 100px;
+  right: 90px;
   padding: 10px 25px;
   color: var(--text-color);
   border: 2px solid var(--accent-color);
