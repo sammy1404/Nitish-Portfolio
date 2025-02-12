@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import supabase from "./supabaseClient";
 import MDXRenderer from "./MDXRenderer";
+import { type } from "@testing-library/user-event/dist/type";
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
@@ -218,7 +219,7 @@ const Dashboard = () => {
                 View MDX Content
               </a>
             </p>
-            <MDXRenderer mdxContent={post.content} />
+            <MDXRenderer mdxUrl={post.content} />
           </div>
         ))
       )}
