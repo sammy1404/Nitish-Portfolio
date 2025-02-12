@@ -112,6 +112,23 @@ const Dashboard = () => {
     }
   };
 
+  // Function to delete a post
+  const deletePost = async (postId) => {
+    const confirmation = prompt("Type 'delete' to confirm deletion:");
+    if (confirmation === "delete") {
+      const { data, error } = await supabase.from("posts").delete().eq("id", postId);
+      
+      if (error) {
+        console.error("Error deleting post:", error);
+      } else {
+        console.log("Post deleted successfully:", data);
+        fetchPosts(); // Refresh the posts after deletion
+      }
+    } else {
+      alert("Deletion cancelled.");
+    }
+  };
+
   return (
     <div>
       <h1>Blogs</h1>
@@ -220,6 +237,9 @@ const Dashboard = () => {
               </a>
             </p>
             <MDXRenderer mdxUrl={post.content} />
+            
+            {/* Delete Button */}
+            <button onClick={() => deletePost(post.id)}>Delete Post</button>
           </div>
         ))
       )}
