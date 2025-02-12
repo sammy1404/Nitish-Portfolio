@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import supabase from "./supabaseClient";
 import MDXRenderer from "./MDXRenderer";
-import { type } from "@testing-library/user-event/dist/type";
+import "./dashboard.css"
+import ThemeButton from "../components/themeButton";
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
@@ -130,11 +131,12 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      <h1>Blogs</h1>
-
+    <div className="dashboard">
+      <ThemeButton />
+      <h1 className="dashheader">Blog Dashboard</h1>
+      <h2 className="dashsubheader">Add New Blog Post</h2>
       <form onSubmit={addPost} style={{ marginBottom: "2rem" }}>
-        <h2>Add New Blog Post</h2>
+        
         <div>
           <input
             type="text"
@@ -143,6 +145,7 @@ const Dashboard = () => {
             value={formData.title}
             onChange={handleInputChange}
             required
+            className="textInput"
           />
         </div>
         <div>
@@ -153,6 +156,7 @@ const Dashboard = () => {
             value={formData.author}
             onChange={handleInputChange}
             required
+            className="textInput"
           />
         </div>
         <div>
@@ -162,6 +166,7 @@ const Dashboard = () => {
             value={formData.summary}
             onChange={handleInputChange}
             required
+            className="summary"
           />
         </div>
         <div>
@@ -171,6 +176,7 @@ const Dashboard = () => {
             accept=".md,.mdx"
             onChange={handleFileChange}
             required
+            className="fileinput"
           />
         </div>
         <div>
@@ -179,6 +185,7 @@ const Dashboard = () => {
             name="image"
             accept="image/*"
             onChange={handleFileChange}
+            className="fileinput"
           />
         </div>
         <div>
@@ -188,6 +195,7 @@ const Dashboard = () => {
             placeholder="Tags (comma-separated)"
             value={formData.tags}
             onChange={handleInputChange}
+            className="textInput"
           />
         </div>
         <button type="submit">Add Post</button>

@@ -1,0 +1,98 @@
+*{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.dashboard{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashheader h1{
+* {
+    font-size: 2.5rem; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 1.2rem; /* Adjust font size for mobile devices */
+    }
+}
+
+font-size: 2rem; /* Font size for h1 on larger screens */
+@media (max-width: 768px) {
+    font-size: 2.5rem; /* Font size for h1 on mobile devices */
+}
+}
+
+.dashsubheader{
+/* Start Generation Here */
+font-size: 1.5rem; /* Font size for h2 on larger screens */
+@media (max-width: 768px) {
+    font-size: 1.2rem; /* Font size for h2 on mobile devices */
+}
+/* End Generation Here */
+}
+
+.textInput{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none; /* Remove the default border */
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    &::placeholder {
+        color: var(--text-color); /* Change this to your desired placeholder color variable */
+    }
+}
+
+.summary {
+    background-color: var(--accent-color);
+    border: none;
+    width: 375px !important; /* Ensure it takes the entire width */
+    height: 150px !important;
+    border-radius: 5px; /* Add rounded corners */
+    padding: 10px; /* Add padding for better text spacing */
+    resize: none; /* Disable resizing */
+    font-family: inherit; /* Use the same font as the rest of the app */
+    color: var(--text-color); /* Ensure text color is consistent */
+    &::placeholder {
+        color: var(--text-color); /* Change this to your desired placeholder color variable */
+    }
+    outline: none; /* Remove default outline */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.fileinput{
+    background-color: var(--secondary-color);
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    color: var(--text-color); /* Text color */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    justify-content: center; /* Center the file input */
+    width: fit-content;
+    padding: 10px 20px; /* Adjust padding for better button appearance */
+    font-size: 1rem; /* Font size for the button */
+    /* Hide the default file input text */
+/* Start Generation Here */
+    &::placeholder {
+        color: transparent; /* Remove the placeholder by making it transparent */
+    }
+    background-color: var(--secondary-color); /* Change this to your desired background color variable */
+/* End Generation Here */
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 400px;
+}
+
