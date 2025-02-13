@@ -4,6 +4,7 @@ import MDXRenderer from "./MDXRenderer";
 import "./dashboard.css"
 import ThemeButton from "../components/themeButton";
 import CollapsibleComponent from "./Preview";
+import { type } from "@testing-library/user-event/dist/type";
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
@@ -29,6 +30,17 @@ const Dashboard = () => {
       setPosts(data);
     }
   };
+  function tags(tags) {
+    // Remove brackets, commas, and extra spaces, then split by commas
+    const tagArray = tags
+      .replace(/[\[\]"]+/g, "")  // Remove brackets and quotes
+      .split(",")                 // Split by commas
+      .map(tag => tag.trim());    // Trim extra spaces from each tag
+    
+    return tagArray;
+  }
+  
+
 
   useEffect(() => {
     fetchPosts();
@@ -238,8 +250,13 @@ const Dashboard = () => {
                 />
               )}
               </div>
-              <p>
-                <strong>Tags:</strong> {Array.isArray(post.tags) ? post.tags.join(", ") : post.tags}
+              <p className="tags">
+              <strong>Tags:</strong> 
+                {tags(post.tags).map((tag, index) => (
+                  <span key={index} className="tag">
+                    {tag}
+                  </span>
+                ))}
               </p>
               
               <p>

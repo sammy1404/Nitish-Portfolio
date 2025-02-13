@@ -146,3 +146,12 @@ form{
     justify-content: space-between;
     align-items: center;
 }
+.tag{
+    margin-left: 5px;
+    padding: 5px 10px; /* Adjusted padding for better spacing */
+}
+
+.tags{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
