@@ -42,7 +42,7 @@ font-size: 1.5rem; /* Font size for h2 on larger screens */
     border-radius: 5px;
     padding: 10px;
     border: none; /* Remove the default border */
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
     &::placeholder {
         color: var(--text-color); /* Change this to your desired placeholder color variable */
@@ -50,7 +50,7 @@ font-size: 1.5rem; /* Font size for h2 on larger screens */
 }
 
 .summary {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     border: none;
     width: 375px !important; /* Ensure it takes the entire width */
     height: 150px !important;
@@ -96,3 +96,53 @@ form{
     width: 400px;
 }
 
+
+.addpost{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px; /* Adjust padding for better button appearance */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; /* Fixed transition property */
+}
+
+.addpost:hover{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+
+.preview{
+    display: flex;
+    width: fit-content;
+}
+
+.postpreview {
+    /* Start Generation Here */
+    background-color: var(--secondary-color); /* Set a background color for the card */
+    border: 1px solid var(--secondary-color); /* Add a border */
+    border-radius: 8px; /* Round the corners */
+    padding: 15px; /* Add padding inside the card */
+    margin: 10px; /* Add margin to separate cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Add a transition for hover effect */
+    /* End Generation Here */
+}
+
+.postpreview:hover {
+    /* Start Generation Here */
+    transform: scale(1.02); /* Slightly scale up on hover */
+    /* End Generation Here */
+}
+
+
+.postpreview img{
+    height: 200px;
+}
+
+.previewHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

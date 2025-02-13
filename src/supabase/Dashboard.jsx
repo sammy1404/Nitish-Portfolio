@@ -3,6 +3,7 @@ import supabase from "./supabaseClient";
 import MDXRenderer from "./MDXRenderer";
 import "./dashboard.css"
 import ThemeButton from "../components/themeButton";
+import CollapsibleComponent from "./Preview";
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
@@ -198,59 +199,65 @@ const Dashboard = () => {
             className="textInput"
           />
         </div>
-        <button type="submit">Add Post</button>
+        <button type="submit" className="addpost">Add Post →</button>
       </form>
-
-      {posts.length === 0 ? (
-        <p>No posts available</p>
-      ) : (
-        posts.map((post) => (
-          <div
-            key={post.id}
-            style={{ borderBottom: "1px solid #ddd", paddingBottom: "1rem", marginBottom: "1rem" }}
-          >
-            <h2>{post.title}</h2>
-            <p>{post.summary}</p>
-            <p>
-              <strong>Author:</strong> {post.author} | <strong>Date:</strong>{" "}
-              {new Date(post.created_at).toLocaleDateString()}
-            </p>
-            
-            {post.image_url && (
-              <img
-                src={post.image_url}
-                alt={post.title}
-                width="300"
-                onError={(e) => (e.target.style.display = "none")}
-              />
-            )}
-            
-            {post.image && (
-              <img
-                src={post.image}
-                alt={post.title}
-                width="300"
-                onError={(e) => (e.target.style.display = "none")}
-              />
-            )}
-            
-            <p>
-              <strong>Tags:</strong> {Array.isArray(post.tags) ? post.tags.join(", ") : post.tags}
-            </p>
-            
-            <p>
-              <strong>Content:</strong>{" "}
-              <a href={post.content} target="_blank" rel="noopener noreferrer">
-                View MDX Content
-              </a>
-            </p>
-            <MDXRenderer mdxUrl={post.content} />
-            
-            {/* Delete Button */}
-            <button onClick={() => deletePost(post.id)}>Delete Post</button>
-          </div>
-        ))
-      )}
+      <h2>Previews</h2>
+        <div className="preview">
+          
+        {posts.length === 0 ? (
+          <p>No posts available</p>
+        ) : (
+          posts.map((post) => (
+            <div
+              key={post.id}
+              className="postpreview"
+            >
+              <div className="previewHeader">
+              <h3>{post.title}</h3>
+              <p>{post.summary}</p>
+              <p>
+                <strong>Author:</strong> {post.author} | <strong>Date:</strong>{" "}
+                {new Date(post.created_at).toLocaleDateString()}
+              </p>
+              
+              {post.image_url && (
+                <img
+                  src={post.image_url}
+                  alt={post.title}
+                  width="300"
+                  onError={(e) => (e.target.style.display = "none")}
+                />
+              )}
+              
+              {post.image && (
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  width="300"
+                  onError={(e) => (e.target.style.display = "none")}
+                />
+              )}
+              </div>
+              <p>
+                <strong>Tags:</strong> {Array.isArray(post.tags) ? post.tags.join(", ") : post.tags}
+              </p>
+              
+              <p>
+                <strong>Content:</strong>{" "}
+                <a href={post.content} target="_blank" rel="noopener noreferrer">
+                  View MDX Content
+                </a>
+              </p>
+              <CollapsibleComponent Component={() => <MDXRenderer mdxUrl={post.content} />} />
+              
+              
+              
+              {/* Delete Button */}
+              <button onClick={() => deletePost(post.id)}>Delete Post</button>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };

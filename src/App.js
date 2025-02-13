@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/admin" element={<Dashboard />} />
+        
       </Routes>
     </Router>
   );
